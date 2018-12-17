@@ -1,4 +1,4 @@
-# vuejs-meetup-poa
+# Vue.js + Github
 
 ## Project setup
 ```
