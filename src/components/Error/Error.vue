@@ -2,7 +2,9 @@
   <div class="notification">
     <button class="delete"
       @click="$emit('cleanError')"></button>
+    <label class="message">
       {{ error | upperCase }}
+    </label>
   </div>
 </template>
 <script>
@@ -16,9 +18,17 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .notification {
   max-width: 500px;
-    margin: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  .delete {
+    position: absolute;
+    right: 0.7rem;
+    top: 1.3rem;
+  }
 }
+
 </style>
