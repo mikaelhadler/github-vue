@@ -10,9 +10,13 @@ export default {
 
 <style lang="css" scoped>
 .lds-dual-ring {
-  display: inline-block;
+  /* display: inline-block; */
+  /* text-align: center;
   width: 64px;
-  height: 64px;
+  height: 64px; */
+  position: relative;
+  top: 3em;
+  left: 48%;
 }
 .lds-dual-ring:after {
   content: " ";

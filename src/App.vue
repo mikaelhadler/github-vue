@@ -18,18 +18,19 @@
 
 <script>
 import axios from 'axios';
-import UserNameSearch from './components/UserNameSearch/UserNameSearch';
-import UserCard from './components/UserCard/UserCard';
-import Loading from './components/Loader/Loader';
+import UserNameSearch from './components/UserNameSearch/UserNameSearch.vue';
+import UserCard from './components/UserCard/UserCard.vue';
+import Loading from './components/Loader/Loader.vue';
 import Error from './components/Error/Error.vue';
 import 'bulma/css/bulma.css';
+
 export default {
   name: 'Github',
   components: {
     UserNameSearch,
     UserCard,
     Loading,
-    Error
+    Error,
   },
   data() {
     return {
@@ -45,7 +46,7 @@ export default {
       this.isLoading = true;
       axios
         .get(`https://api.github.com/users/${search}`)
-        .then( res => {
+        .then((res) => {
           this.user = res.data;
           this.isLoading = false;
         }).catch((e) => {
@@ -62,13 +63,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  .title {
+    text-align: center;
+  }
 }
 </style>

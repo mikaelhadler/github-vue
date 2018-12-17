@@ -1,5 +1,5 @@
 <template>
-  <div class="github-search">
+  <div class="search">
     <input class="input" type="text" placeholder="Your github username"
       v-on:keyup.enter="$emit('searchUser', search)"
       v-model="search">
@@ -19,16 +19,17 @@ export default {
   },
 };
 </script>
-<style scoped>
-.github-search {
+<style lang="scss" scoped>
+.search {
   width: 256px;
   margin: auto;
+  text-align: center;
 }
-.github-search input {
+.search input {
   text-align: center;
   margin-bottom: 20px;
 }
-.github-search button {
+.search button {
   margin-bottom: 20px;
 }
 </style>
