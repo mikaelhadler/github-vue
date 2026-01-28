@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bulma": "^0.7.2",
-    "vue": "^2.5.17",
+    "vue": "^3.0.0",
     "snyk": "^1.161.1"
   },
   "devDependencies": {
